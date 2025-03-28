@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="busca.css">
+    <title>Operadoras Ativas</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Operadoras Ativas</h1>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Buscar por razão social, CNPJ ou registro ANS...">
+        <button onclick="buscarOperadoras()">Buscar</button>
+    </div>
+
+    <div id="loading" class="loading" style="display: none;">Carregando dados...</div>
+    <div id="error" class="error" style="display: none;"></div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Registro ANS</th>
+            <th>CNPJ</th>
+            <th>Razão Social</th>
+            <th>Nome Fantasia</th>
+        </tr>
+        </thead>
+        <tbody id="operadoras-table">
+
+        </tbody>
+    </table>
+</div>
+
+<script src="busca.js"></script>
+</body>
+</html>
